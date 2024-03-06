@@ -1,10 +1,18 @@
 {
   "environmentUrl": "https://cer89933.apps.dynatrace.com/",
   "app": {
+    "id": "my.greeter.action",
     "name": "workflow-app",
     "version": "0.0.0",
-    "description": "A starting project with routing, fetching data, and charting",
-    "id": "my.workflow.app",
-    "scopes": [{ "name": "storage:logs:read", "comment": "default template" }, { "name": "storage:buckets:read", "comment": "default template" }]
+    "description":  "A starting project with routing, fetching data, and charting",
+    "scopes": [{ "name": "app-settings:objects:read", "comment": "To read app settings" }],
+    "actions": [
+      {
+        "title": "Greeter",
+        "description": "Greet whoever greets us",
+        "name": "greeter"
+      }
+    ],
+    "hidden": true
   }
 }

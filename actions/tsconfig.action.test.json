@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.action.json",
+  "compilerOptions": {
+    "types": ["@dynatrace/runtime-simulator/types", "jest"],
+    "esModuleInterop": true
+  },
+  "include": ["**/*.action.test.ts"]
+}
